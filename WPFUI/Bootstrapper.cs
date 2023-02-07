@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using WPFUI.ViewModels;
 
 namespace WPFUI
 {
@@ -17,7 +18,7 @@ namespace WPFUI
 
         protected override void OnStartup(object sender, StartupEventArgs e)
         {
-            //TODO:DisplayRootViewFor<ShellViewModel>();
+            DisplayRootViewFor<ShellViewModel>();
         }
     }
 }
