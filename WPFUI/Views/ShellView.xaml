@@ -39,5 +39,9 @@
         <ComboBox x:Name="People" Grid.Row="3" Grid.Column="1"
                   SelectedItem="{Binding Path=SelectedPerson, Mode=OneWayToSource}" 
                   DisplayMemberPath="FirstName"/>
+        <TextBlock x:Name="SelectedPerson_LastName" Grid.Row="3" Grid.Column="2"/>
+        
+        <!-- Row 4-->
+        <Button x:Name="ClearText" Grid.Row="4" Grid.Column="1">Clear Names</Button>
     </Grid>
 </Window>
