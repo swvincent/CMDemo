@@ -16,9 +16,9 @@ namespace WPFUI
             Initialize();
         }
 
-        protected override void OnStartup(object sender, StartupEventArgs e)
+        protected async override void OnStartup(object sender, StartupEventArgs e)
         {
-            DisplayRootViewFor<ShellViewModel>();
+            await DisplayRootViewForAsync<ShellViewModel>();
         }
     }
 }

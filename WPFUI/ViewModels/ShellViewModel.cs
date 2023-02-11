@@ -77,14 +77,14 @@ namespace WPFUI.ViewModels
 			LastName = string.Empty;
 		}
 
-		public void LoadPageOne()
+		public async Task LoadPageOne()
 		{
-			ActivateItem(new FirstChildViewModel());
+			await ActivateItemAsync(new FirstChildViewModel());
 		}
 
-		public void LoadPageTwo()
+		public async Task LoadPageTwo()
 		{
-			ActivateItem(new SecondChildViewModel());
+			await ActivateItemAsync(new SecondChildViewModel());
 		}
 	}
 }
